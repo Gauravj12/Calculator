@@ -1,0 +1,62 @@
+<html <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="main">
+            <form name="calculatorform" class="calculatorform">
+                
+                <div class="screen">
+                    <input type="text" name="screen" readonly>
+                </div>
+
+                <div class="btn">
+                    <input type="button" name="clear" class="clearbtn" value="clear" onclick="Clear(); "> 
+                </div>
+
+                <div class="btn">
+                    <input type="button" name="num7" class="main_num" value="7" onclick="valueButton(this); ">
+                    <input type="button" name="num8" class="main_num" value="8" onclick="valueButton(this); ">
+                    <input type="button" name="num9" class="main_num" value="9" onclick="valueButton(this); ">
+                    <input type="button" name="mul" class="operand" value="*" onclick="valueButton(this); ">
+                </div>
+
+                <div class="btn">
+                    <input type="button" name="num5" class="main_num" value="4" onclick="valueButton(this); ">
+                    <input type="button" name="num5" class="main_num" value="5" onclick="valueButton(this); ">
+                    <input type="button" name="num6" class="main_num" value="6" onclick="valueButton(this); ">
+                    <input type="button" name="sub" class="operand" value="-" onclick="valueButton(this); ">
+                </div>
+
+                <div class="btn">
+                    <input type="button" name="num1" class="main_num" value="1" onclick="valueButton(this); ">
+                    <input type="button" name="num2" class="main_num" value="2" onclick="valueButton(this); ">
+                    <input type="button" name="num3" class="main_num" value="3" onclick="valueButton(this); ">
+                    <input type="button" name="plus" class="operand" value="+" onclick="valueButton(this); ">
+                </div>
+
+                <div class="btn">
+                    <input type="button" name="dot" class="main_num" value="." onclick="valueButton(this); ">
+                    <input type="button" name="numzero" class="main_num" value="0" onclick="valueButton(this); ">
+                    <input type="button" name="div" class="operand" value="/" onclick="valueButton(this); ">
+                    <input type="button" name="equal" class="main_num" value="=" onclick="calculate(); ">
+                </div>
+
+            </form> 
+        </div>
+        <script src="/script.js" async defer></script>
+    </body>
+</html>
